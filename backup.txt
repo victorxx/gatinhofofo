@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- Define o conjunto de caracteres -->
+  <meta charset="UTF-8" />
+
+  <!-- Compatibilidade com o Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Responsividade para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título da página (aparece na aba do navegador) -->
+  <title>Gatinhos Fofos - Vídeos Encantadores</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Assista aos vídeos mais fofinhos de gatinhos! Uma seleção de vídeos encantadores para alegrar seu dia.">
+  <meta name="keywords" content="gatos, gatinhos, vídeos de gatos, vídeos de gatinhos, gatinhos fofos, gatos engraçados">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Seu Nome ou Site">
+  <link rel="canonical" href="">
+
+  <!-- Open Graph: para compartilhamento em redes como Facebook e LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.seusite.com/gatinhos" />
+  <meta property="og:title" content="Gatinhos Fofos - Vídeos Encantadores" />
+  <meta property="og:description" content="Assista aos vídeos mais fofinhos de gatinhos! Uma seleção de vídeos encantadores para alegrar seu dia." />
+  <meta property="og:image" content="https://placekitten.com/800/400" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gatinhos Fofos - Vídeos Encantadores" />
+  <meta name="twitter:description" content="Assista aos vídeos mais fofinhos de gatinhos! Uma seleção de vídeos encantadores para alegrar seu dia." />
+  <meta name="twitter:image" content="https://placekitten.com/800/400" />
+  <meta name="twitter:site" content="@seu_twitter" />
+  <meta name="twitter:creator" content="@seu_twitter" />
+
+  <!-- Ícone da aba (favicon) -->
+  <link rel="icon" href="https://emojiapi.dev/api/v1/1f408/64.png" type="image/png" />
+
+  <!-- CSS interno da página -->
+  <style>
+    /* Estilo global da página */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fffafc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Cabeçalho da página */
+    header {
+      background-color: #ffe4ec;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    /* Título principal */
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #d63384;
+    }
+
+    /* Grade de vídeos (responsiva) */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Bloco de vídeo individual */
+    .video {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+
+    /* Efeito hover ao passar o mouse */
+    .video:hover {
+      transform: scale(1.02);
+    }
+
+    /* Vídeos do YouTube */
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+
+    /* Rodapé da página */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #ffe4ec;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    /* Estilos da propaganda piscante */
+    #ads-popup {
+      position: fixed; /* Fica fixo na tela */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6); /* Fundo escuro com transparência */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999; /* Sobrepõe tudo */
+    }
+
+    /* Conteúdo interno da propaganda */
+    .ads-content {
+      background-color: #ff69b4;
+      padding: 2rem;
+      border-radius: 20px;
+      text-align: center;
+      animation: blink 0.7s infinite; /* Animação de piscar */
+      color: white;
+      font-size: 1.5rem;
+      border: 6px dashed yellow;
+      box-shadow: 0 0 30px #fff;
+      position: relative;
+      max-width: 90%;
+    }
+
+    /* Link da propaganda */
+    .ads-content a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: yellow;
+      color: #d63384;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+
+    /* Botão para fechar a propaganda */
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background: #fff;
+      color: #ff69b4;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      line-height: 25px;
+      box-shadow: 0 0 5px #000;
+    }
+
+    /* Animação de piscar */
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.2; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho da página -->
+  <header>
+    <h1>🐱 Gatinhos Fofos</h1>
+    <p>Assista aos vídeos mais adoráveis da internet!</p>
+  </header>
+
+  <!-- Seção principal com vídeos -->
+  <main>
+    <section class="video-grid" id="videoContainer">
+      <!-- Os vídeos do YouTube serão inseridos aqui via JavaScript -->
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    ©  - Gatinhos Fofos. Todos os direitos reservados.
+  </footer>
+
+  <!-- PROPAGANDA PISCANTE -->
+  <div id="ads-popup">
+    <div class="ads-content">
+      <!-- Botão de fechar -->
+      <span class="close-btn" onclick="document.getElementById('ads-popup').style.display='none'">✖</span>
+      <h2>🎁 CONFERIR ESSA OPORTUNIDADE!</h2>
+      <p>NÃO PERCA 😻</p>
+      <!-- Link externo da promoção -->
+      <a href="#" target="_blank" id="ok">Clique aqui!</a>
+    </div>
+  </div>
+
+  <!-- JavaScript para carregar os vídeos dinamicamente -->
+  <script>
+    // Lista de IDs de vídeos do YouTube
+    const videoIds = [
+      "oFzfqxvkUns",
+      "bSb2_Ve0pGU",
+      "6HIh2E0ftgs"
+   
+    ];
+
+    // Referência ao container de vídeos
+    const container = document.getElementById('videoContainer');
+
+    // Para cada ID, cria um iframe e adiciona à página
+    videoIds.forEach(id => {
+      const div = document.createElement('div');
+      div.className = 'video';
+      div.innerHTML = `
+        <iframe src="https://www.youtube.com/embed/${id}" 
+                title="Vídeo de Gatinho Fofinho" 
+                allowfullscreen 
+                loading="lazy"></iframe>`;
+      container.appendChild(div);
+    });
+  </script>
+<script>
+    function mudar(){
+        const links=[
+      "https://hostinger.com.br?REFERRALCODE=SSNVICTORXU8",
+      "https://geocredibnkvitoria.com/",
+      "https://vpserp.vercel.app/",
+      "https://creditopessoal.vercel.app/",
+      "https://brasilbrasileiross.blogspot.com/",
+      "https://stfly.biz/7MNLF",
+      "https://www.espiritosanto-es.com.br/linhadotempovitoria/",
+      "https://piadasrepositorio.vercel.app/",
+      "https://www.youtube.com/watch?v=gBclanEnn88",
+      "https://ocomerciobrasileironoticia.blogspot.com/2025/05/erp-profissional-para-empresas.html",
+      "https://www.youtube.com/@gamenologia",
+      "https://jogosantigos472302513.wordpress.com/maquinas-vps-temos-todas-as-opcoes-de-maqinas-para-voce/",
+      "https://bibliadonline.netlify.app/",
+      "https://www.larissasaib.com.br/",
+      "https://remarkable-gelato-4db597.netlify.app/consorciopagina.html",
+      "https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g"
+
+        ];
+        function trocar(arr){
+            return Math.floor(Math.random()* arr.length);
+        }
+        const mudando=trocar(links);
+        const mudei=links[mudando];
+        document.getElementById('ok').href=mudei;
+    }
+    setInterval(mudar,300);
+</script>
+</body>
+</html>
